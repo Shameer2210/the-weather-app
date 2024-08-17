@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    
+  </head>
+  <body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="./src/Sunset Above Nature HD Scene Video Background Loop   YouTube.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+    <header class="row my-0 mx-0 mt-5 p-3 text-center">
+      <h1>The Weather</h1>
+    </header>
+
+
+    <main class="p-3">
+    <div class="row">
+    <div class="col-md-12">  
+    <div class="card mx-auto my-auto bg-transparent shadow mb-5 bg-body" id="maincontainer">
+      <img src="./src/56-566793_storm-clouds-png.png" id="displayer" class="card-img-top img-fluid p-1 rounded-4" alt="Have a good day" />
+      <div class="card-body text-center">
+        <!-- Dropdown Section -->
+        <form class="form-inline my-2 mx-auto col-5" action>
+            <input class="form-control mr-sm-2" id="city" type="search" placeholder="Enter City Name" aria-label="Search">
+            <button onclick="getweather(event)" class="btn btn-outline-light my-2 my-sm-2" id="searching" type="submit">Search</button>
+        </form>
+      </div>
+       <!-- Weather Data Section -->
+       <div class="row text-center mt-3 mb-3">
+        <div class="col-12 col-sm-4 ">
+          <h3 id="temp"></h3>
+          <h6>Temperature</h6>
+        </div>
+        <div class="col-12 col-sm-4 ">
+          <h3 id="windspeed"></h3>
+          <h6>Wind Speed</h6>
+        </div>
+        <div class="col-12 col-sm-4 ">
+          <h3 id="humidity"></h3>
+          <h6>Humidity</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+const cold = "https://cdn.mos.cms.futurecdn.net/8Zw7hWD5ZaquyftsRbEmof.jpg";
+      const mildcold = "https://images5.alphacoders.com/488/thumb-1920-488612.jpg";
+      const warm = "https://static5.depositphotos.com/1033604/415/i/950/depositphotos_4158035-stock-photo-cherry-blossoms-plenitude.jpg"; // Ensure this is a direct link to an image
+      const hot = "https://cdn.firstcry.com/education/2022/04/29104151/1007648908.jpg";
+      const heavyhot = "https://images.wallpapersafari.com/desktop/1920/1080/15/60/44043.jpg";
+      const hottest = "https://www.nationalgeographic.com/adventure/wp-content/uploads/2019/06/mount-everest-summit-mount-everest-mountain-asia.jpg";
+  
+      if (temp > 0 && temp <= 10) {
+        displayimage.src = cold;
+      } else if (temp >= 11 && temp <= 20) {
+        displayimage.src = mildcold;
+      } else if (temp >= 21 && temp <= 30) {
+        displayimage.src = warm;
+      } else if (temp >= 31 && temp <= 35) {
+        displayimage.src = hot;
+      } else if (temp >= 36 && temp <= 40) {
+        displayimage.src = heavyhot;
+      } else {
+        displayimage.src = hottest;
+      }
